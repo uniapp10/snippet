@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>IDECodeSnippetCompletionPrefix</key>
+	<string>mydemos</string>
+	<key>IDECodeSnippetCompletionScopes</key>
+	<array>
+		<string>All</string>
+	</array>
+	<key>IDECodeSnippetContents</key>
+	<string>override func viewDidLoad() {
+        super.viewDidLoad()
+
+        self.navigationController?.navigationBar.barTintColor = .green
+        // Do any additional setup after loading the view.
+        let y: CGFloat = 100
+        let m: CGFloat = 30
+        let screenSize = UIScreen.main.bounds.size
+        let width = (screenSize.width - m * 3) * 0.5
+        let leftBtn = UIButton.init(frame: CGRect(x: m, y: y, width: width, height: 50))
+        leftBtn.setTitle("test1", for: .normal)
+        leftBtn.addTarget(self, action: #selector(leftBtnClick), for: .touchUpInside)
+        leftBtn.backgroundColor = .purple
+        let rightBtn = UIButton.init(frame: CGRect(x: m * 2 + width, y: y, width: width, height: 50))
+        rightBtn.setTitle("test2", for: .normal)
+        rightBtn.addTarget(self, action: #selector(rightBtnClick), for: .touchUpInside)
+        rightBtn.backgroundColor = .brown
+        self.view.addSubview(leftBtn)
+        self.view.addSubview(rightBtn)
+    }
+    
+    @objc
+    func leftBtnClick() -&gt; Void {
+   
+    }
+    
+    @objc
+    func rightBtnClick() -&gt; Void {
+      
+    }</string>
+	<key>IDECodeSnippetIdentifier</key>
+	<string>6DC024F2-8ED4-4B91-8E12-F0D69B22BB8D</string>
+	<key>IDECodeSnippetLanguage</key>
+	<string>Xcode.SourceCodeLanguage.Generic</string>
+	<key>IDECodeSnippetSummary</key>
+	<string>mydemos</string>
+	<key>IDECodeSnippetTitle</key>
+	<string>mydemos</string>
+	<key>IDECodeSnippetUserSnippet</key>
+	<true/>
+	<key>IDECodeSnippetVersion</key>
+	<integer>2</integer>
+</dict>
+</plist>

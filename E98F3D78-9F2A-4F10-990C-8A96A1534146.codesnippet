@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>IDECodeSnippetCompletionPrefix</key>
+	<string>mydemoOC</string>
+	<key>IDECodeSnippetCompletionScopes</key>
+	<array>
+		<string>All</string>
+	</array>
+	<key>IDECodeSnippetContents</key>
+	<string>static let screenSize = UIScreen.main.bounds.size
+    let screenWidth = screenSize.width
+    let screenHeight = screenSize.height
+   
+    override func viewDidLoad() {
+        super.viewDidLoad()
+        
+        let margin: CGFloat = 10
+        let btn = UIButton(frame: CGRect(x: margin, y: 100, width: screenWidth - 2 * margin, height: 80))
+        btn.setTitle("Demo", for: .normal)
+        btn.backgroundColor = .brown
+        self.view.addSubview(btn)
+        
+        btn.addTarget(self, action: #selector(btnClick), for: .touchUpInside)
+    }
+    
+    @objc
+    func btnClick() {
+        
+    }</string>
+	<key>IDECodeSnippetIdentifier</key>
+	<string>E98F3D78-9F2A-4F10-990C-8A96A1534146</string>
+	<key>IDECodeSnippetLanguage</key>
+	<string>Xcode.SourceCodeLanguage.Generic</string>
+	<key>IDECodeSnippetSummary</key>
+	<string>mydemoOC</string>
+	<key>IDECodeSnippetTitle</key>
+	<string>mydemoOC</string>
+	<key>IDECodeSnippetUserSnippet</key>
+	<true/>
+	<key>IDECodeSnippetVersion</key>
+	<integer>2</integer>
+</dict>
+</plist>
