@@ -3,24 +3,21 @@
 <plist version="1.0">
 <dict>
 	<key>IDECodeSnippetCompletionPrefix</key>
-	<string>singleton</string>
+	<string>mc</string>
 	<key>IDECodeSnippetCompletionScopes</key>
 	<array>
-		<string>CodeBlock</string>
+		<string>All</string>
 	</array>
 	<key>IDECodeSnippetContents</key>
-	<string>static &lt;#class#&gt; *instance = nil;
-static dispatch_once_t onceToken;
-dispatch_once(&amp;onceToken, ^{
-    instance = [[&lt;#class#&gt; alloc] init];
-});
-return instance;</string>
+	<string>@property (nonatomic, copy) &lt;#NSMutableURLRequest#&gt; *&lt;#request#&gt;;</string>
 	<key>IDECodeSnippetIdentifier</key>
-	<string>E7ABB503-78BA-4C54-8D9A-E63D763749C6</string>
+	<string>48E43778-D33D-447D-99E3-78DAAE7CE28C</string>
 	<key>IDECodeSnippetLanguage</key>
 	<string>Xcode.SourceCodeLanguage.Objective-C</string>
+	<key>IDECodeSnippetSummary</key>
+	<string></string>
 	<key>IDECodeSnippetTitle</key>
-	<string>Objective-C Singleton</string>
+	<string>mc</string>
 	<key>IDECodeSnippetUserSnippet</key>
 	<true/>
 	<key>IDECodeSnippetVersion</key>

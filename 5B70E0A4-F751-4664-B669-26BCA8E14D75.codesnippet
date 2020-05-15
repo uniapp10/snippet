@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>IDECodeSnippetCompletionPrefix</key>
+	<string>mydemoOC</string>
+	<key>IDECodeSnippetCompletionScopes</key>
+	<array>
+		<string>All</string>
+	</array>
+	<key>IDECodeSnippetContents</key>
+	<string>- (void)viewDidLoad {
+    [super viewDidLoad];
+    // Do any additional setup after loading the view.
+    
+    UIButton *btnOne = [self getBtnWithTitle:@"Test" positionY:100];
+    [self.view addSubview:btnOne];
+}
+
+- (UIButton *)getBtnWithTitle: (NSString *)title positionY: (CGFloat) positionY {
+    CGRect ScreenFrame = [UIScreen mainScreen].bounds;
+    CGFloat ScreenWidth = ScreenFrame.size.width;
+    CGFloat ScreenHeight = ScreenFrame.size.height;
+    CGFloat margin = 10;
+    UIButton *btn = [[UIButton alloc] init];
+    btn.frame = CGRectMake(10, positionY, ScreenWidth - 2 * margin, 50);
+    [btn setTitle:title forState:UIControlStateNormal];
+    [btn addTarget:self action:@selector(btnClick) forControlEvents:(UIControlEventTouchUpInside)];
+    btn.backgroundColor = [UIColor orangeColor];
+    return btn;
+}
+
+- (void)btnClick {
+    
+}
+</string>
+	<key>IDECodeSnippetIdentifier</key>
+	<string>5B70E0A4-F751-4664-B669-26BCA8E14D75</string>
+	<key>IDECodeSnippetLanguage</key>
+	<string>Xcode.SourceCodeLanguage.Objective-C</string>
+	<key>IDECodeSnippetSummary</key>
+	<string></string>
+	<key>IDECodeSnippetTitle</key>
+	<string>mydemoOC</string>
+	<key>IDECodeSnippetUserSnippet</key>
+	<true/>
+	<key>IDECodeSnippetVersion</key>
+	<integer>2</integer>
+</dict>
+</plist>

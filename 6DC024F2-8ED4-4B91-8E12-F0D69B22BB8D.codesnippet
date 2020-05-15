@@ -11,8 +11,9 @@
 	<key>IDECodeSnippetContents</key>
 	<string>override func viewDidLoad() {
         super.viewDidLoad()
-
-        self.navigationController?.navigationBar.barTintColor = .green
+        
+        view.backgroundColor = .white
+        navigationController?.navigationBar.barTintColor = .green
         // Do any additional setup after loading the view.
         let y: CGFloat = 100
         let m: CGFloat = 30
@@ -26,8 +27,8 @@
         rightBtn.setTitle("test2", for: .normal)
         rightBtn.addTarget(self, action: #selector(rightBtnClick), for: .touchUpInside)
         rightBtn.backgroundColor = .brown
-        self.view.addSubview(leftBtn)
-        self.view.addSubview(rightBtn)
+        view.addSubview(leftBtn)
+        view.addSubview(rightBtn)
     }
     
     @objc
