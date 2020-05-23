@@ -3,36 +3,28 @@
 <plist version="1.0">
 <dict>
 	<key>IDECodeSnippetCompletionPrefix</key>
-	<string>myviewinitOC</string>
+	<string>myshare</string>
 	<key>IDECodeSnippetCompletionScopes</key>
 	<array>
 		<string>All</string>
 	</array>
 	<key>IDECodeSnippetContents</key>
-	<string>- (instancetype)init
-{
-    return [self initWithFrame:(CGRectZero)];
-}
-
-- (instancetype)initWithFrame:(CGRect)frame {
-    self = [super initWithFrame:frame];
-    if (self) {
-        [self setupUI];
-    }
-    return self;
-}
-
-- (void)setupUI {
-
+	<string>+ (instancetype)shareInstance {
+    static &lt;#TCPTool#&gt; *&lt;#tool#&gt;;
+    static dispatch_once_t onceToken;
+    dispatch_once(&amp;onceToken, ^{
+        &lt;#tool#&gt; = [self new];
+    });
+    return &lt;#tool#&gt;;
 }</string>
 	<key>IDECodeSnippetIdentifier</key>
-	<string>63E36F4B-A279-490B-A35B-E6E067D3AF37</string>
+	<string>EB755DC7-21B8-43C6-A1F3-7BF88E6448B0</string>
 	<key>IDECodeSnippetLanguage</key>
 	<string>Xcode.SourceCodeLanguage.Objective-C</string>
 	<key>IDECodeSnippetSummary</key>
-	<string>myviewinitOC</string>
+	<string>myshare</string>
 	<key>IDECodeSnippetTitle</key>
-	<string>myviewinitOC</string>
+	<string>myshare</string>
 	<key>IDECodeSnippetUserSnippet</key>
 	<true/>
 	<key>IDECodeSnippetVersion</key>

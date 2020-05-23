@@ -3,36 +3,21 @@
 <plist version="1.0">
 <dict>
 	<key>IDECodeSnippetCompletionPrefix</key>
-	<string>myviewinitOC</string>
+	<string>mylogOC</string>
 	<key>IDECodeSnippetCompletionScopes</key>
 	<array>
 		<string>All</string>
 	</array>
 	<key>IDECodeSnippetContents</key>
-	<string>- (instancetype)init
-{
-    return [self initWithFrame:(CGRectZero)];
-}
-
-- (instancetype)initWithFrame:(CGRect)frame {
-    self = [super initWithFrame:frame];
-    if (self) {
-        [self setupUI];
-    }
-    return self;
-}
-
-- (void)setupUI {
-
-}</string>
+	<string>NSLog(@"%@", &lt;#[NSThread currentThread]#&gt;);</string>
 	<key>IDECodeSnippetIdentifier</key>
-	<string>63E36F4B-A279-490B-A35B-E6E067D3AF37</string>
+	<string>C174A0EC-90C1-44DC-9500-67DBC867532D</string>
 	<key>IDECodeSnippetLanguage</key>
 	<string>Xcode.SourceCodeLanguage.Objective-C</string>
 	<key>IDECodeSnippetSummary</key>
-	<string>myviewinitOC</string>
+	<string>mylogOC</string>
 	<key>IDECodeSnippetTitle</key>
-	<string>myviewinitOC</string>
+	<string>mylogOC</string>
 	<key>IDECodeSnippetUserSnippet</key>
 	<true/>
 	<key>IDECodeSnippetVersion</key>
