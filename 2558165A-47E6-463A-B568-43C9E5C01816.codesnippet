@@ -3,36 +3,33 @@
 <plist version="1.0">
 <dict>
 	<key>IDECodeSnippetCompletionPrefix</key>
-	<string>myviewinitOC</string>
+	<string>mymodel</string>
 	<key>IDECodeSnippetCompletionScopes</key>
 	<array>
 		<string>All</string>
 	</array>
 	<key>IDECodeSnippetContents</key>
-	<string>- (instancetype)init
-{
-    return [self initWithFrame:(CGRectZero)];
+	<string>+ (instancetype)modelWithDict:(NSDictionary *)dict {
+    return [[self alloc] initWithDict:dict];;
 }
 
-- (instancetype)initWithFrame:(CGRect)frame {
-    self = [super initWithFrame:frame];
+- (instancetype)initWithDict:(NSDictionary *)dict {
+    self = [super init];
     if (self) {
-        [self setupUI];
+        [self setValuesForKeysWithDictionary:dict];
     }
     return self;
 }
 
-- (void)setupUI {
-
-}</string>
+- (void)setValue:(id)value forUndefinedKey:(NSString *)key {}</string>
 	<key>IDECodeSnippetIdentifier</key>
-	<string>63E36F4B-A279-490B-A35B-E6E067D3AF37</string>
+	<string>2558165A-47E6-463A-B568-43C9E5C01816</string>
 	<key>IDECodeSnippetLanguage</key>
 	<string>Xcode.SourceCodeLanguage.Objective-C</string>
 	<key>IDECodeSnippetSummary</key>
-	<string>myviewinitOC</string>
+	<string>mymodel</string>
 	<key>IDECodeSnippetTitle</key>
-	<string>myviewinitOC</string>
+	<string>mymodel</string>
 	<key>IDECodeSnippetUserSnippet</key>
 	<true/>
 	<key>IDECodeSnippetVersion</key>

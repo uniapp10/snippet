@@ -3,36 +3,26 @@
 <plist version="1.0">
 <dict>
 	<key>IDECodeSnippetCompletionPrefix</key>
-	<string>myviewinitOC</string>
+	<string>mylazyOC</string>
 	<key>IDECodeSnippetCompletionScopes</key>
 	<array>
 		<string>All</string>
 	</array>
 	<key>IDECodeSnippetContents</key>
-	<string>- (instancetype)init
-{
-    return [self initWithFrame:(CGRectZero)];
-}
-
-- (instancetype)initWithFrame:(CGRect)frame {
-    self = [super initWithFrame:frame];
-    if (self) {
-        [self setupUI];
+	<string>- (&lt;#NSMutableArray#&gt; *)&lt;#clientArray#&gt; {
+    if (!_&lt;#clientArray#&gt;) {
+        _&lt;#clientArray#&gt; = &lt;#[NSMutableArray array]#&gt;;
     }
-    return self;
-}
-
-- (void)setupUI {
-
+    return _&lt;#clientArray#&gt;;
 }</string>
 	<key>IDECodeSnippetIdentifier</key>
-	<string>63E36F4B-A279-490B-A35B-E6E067D3AF37</string>
+	<string>D4D3C9BD-A952-48B4-BA00-1F3EB24EC5C3</string>
 	<key>IDECodeSnippetLanguage</key>
 	<string>Xcode.SourceCodeLanguage.Objective-C</string>
 	<key>IDECodeSnippetSummary</key>
-	<string>myviewinitOC</string>
+	<string>mylazyOC</string>
 	<key>IDECodeSnippetTitle</key>
-	<string>myviewinitOC</string>
+	<string>mylazyOC</string>
 	<key>IDECodeSnippetUserSnippet</key>
 	<true/>
 	<key>IDECodeSnippetVersion</key>

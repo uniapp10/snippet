@@ -3,36 +3,31 @@
 <plist version="1.0">
 <dict>
 	<key>IDECodeSnippetCompletionPrefix</key>
-	<string>myviewinitOC</string>
+	<string>mykey</string>
 	<key>IDECodeSnippetCompletionScopes</key>
 	<array>
 		<string>All</string>
 	</array>
 	<key>IDECodeSnippetContents</key>
-	<string>- (instancetype)init
-{
-    return [self initWithFrame:(CGRectZero)];
+	<string>#import &lt;objc/runtime.h&gt;
+
+static const NSString * &lt;#WBCommonButtonStyleKey#&gt; = @"&lt;#WBCommonButtonStyleKey#&gt;";
+
+- (void)setTipBtn:(UIButton *)btn {
+    objc_setAssociatedObject(self, &amp;&lt;#WBNavBarTipKey#&gt;, btn, OBJC_ASSOCIATION_RETAIN_NONATOMIC);
 }
 
-- (instancetype)initWithFrame:(CGRect)frame {
-    self = [super initWithFrame:frame];
-    if (self) {
-        [self setupUI];
-    }
-    return self;
-}
-
-- (void)setupUI {
-
+- (UIButton *)getTipBtn {
+    return objc_getAssociatedObject(self, &amp;&lt;#WBNavBarTipKey#&gt;);
 }</string>
 	<key>IDECodeSnippetIdentifier</key>
-	<string>63E36F4B-A279-490B-A35B-E6E067D3AF37</string>
+	<string>B05D7F08-9F1E-49CC-99A9-0C10379BD9F2</string>
 	<key>IDECodeSnippetLanguage</key>
 	<string>Xcode.SourceCodeLanguage.Objective-C</string>
 	<key>IDECodeSnippetSummary</key>
-	<string>myviewinitOC</string>
+	<string>mykey</string>
 	<key>IDECodeSnippetTitle</key>
-	<string>myviewinitOC</string>
+	<string>mykey</string>
 	<key>IDECodeSnippetUserSnippet</key>
 	<true/>
 	<key>IDECodeSnippetVersion</key>

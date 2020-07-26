@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>IDECodeSnippetCompletionPrefix</key>
+	<string>mysavephotoswift</string>
+	<key>IDECodeSnippetCompletionScopes</key>
+	<array>
+		<string>All</string>
+	</array>
+	<key>IDECodeSnippetContents</key>
+	<string>    func savePhoto() {        
+        let viewSize = self.view.bounds.size;
+        UIGraphicsBeginImageContext(viewSize)
+        view.layer.render(in: UIGraphicsGetCurrentContext()!)
+        let image = UIGraphicsGetImageFromCurrentImageContext()!
+        UIGraphicsEndImageContext()
+        
+        UIImageWriteToSavedPhotosAlbum(image, self, #selector(image(image:didFinishSavingWithError:contextInfo:)), nil)
+    }
+    
+    @objc private func image(image:UIImage,didFinishSavingWithError error:NSError?,contextInfo:AnyObject?) {
+        print("保存成功")
+    }</string>
+	<key>IDECodeSnippetIdentifier</key>
+	<string>992205DA-71EC-4E4E-8770-5B0D0E962636</string>
+	<key>IDECodeSnippetLanguage</key>
+	<string>Xcode.SourceCodeLanguage.Swift</string>
+	<key>IDECodeSnippetSummary</key>
+	<string>mysavephotoswift</string>
+	<key>IDECodeSnippetTitle</key>
+	<string>mysavephotoswift</string>
+	<key>IDECodeSnippetUserSnippet</key>
+	<true/>
+	<key>IDECodeSnippetVersion</key>
+	<integer>2</integer>
+</dict>
+</plist>
